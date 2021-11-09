@@ -4,20 +4,19 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>CV</title>
+    <title>Site Internet</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='site.CSS'>
     <script src='main.js'></script>
 </head>
-<link rel='stylesheet' href='site.CSS'>
-
 
 <body>
+
     <nav>
         <!--Barre de navigation avec tous les liens vers les différentes pages du site-->
         <ul class="nav-list">
             <li class="nav-item">
-                <a href="index.html">Page d'accueil</a>
+                <a href="site.html">Page d'acceuil</a>
             </li>
             <li class="nav-item">
                 <a href="page1.html">La Paix-Dieu</a>
@@ -49,29 +48,30 @@
         </ul>
     </nav>
 
-    <!--Ici nous avons une page consacrés à mon top 5 de mes bières avec un tableau-->
-    <div class="titreTAB">
-        <b></b>
-        <p> Tableaux avec mes bières préférès selon moi</p>
-        </b>
+    <div class="formulaire">
+        <h1>Formulaire de contact</h1>
+        <form action="mailto:dupontreuetheo21@gmail.com?subject=Mail test" method="post" enctype="text/plain">
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="mail">e-mail :</label>
+                <input type="email" id="mail" name="mail">
+            </div>
+            <div>
+                <label for="msg"> Age</label>
+                <input type="number" id="mail" name="Age">
+            </div>
+            <div>
+                <label for="msg"> Sexe</label>
+                <input type="text" id="mail" name="Sexe">
+            </div>
+            <div class="button">
+                <button type="submit">Envoyer </button>
+            </div>
     </div>
-    <table>
-        <thead>
-            <tr>
-                <th colspan="5">Mon top 5 de mes bières préférès</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>1)La Paix-Dieu</th>
-                <th>2)La 1664 Blanche</th>
-                <th>3)La Karmeliet Triple</th>
-                <th>4)La chimay Bleue</th>
-                <th>5)La leffe Ruby</th>
-            </tr>
-        </tbody>
-    </table>
-
+    </form>
 </body>
 
 </html>
